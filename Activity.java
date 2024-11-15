@@ -1,24 +1,18 @@
-public class Activity{
-public static void main(String[] args){
+public class Main{
+    public static void main(String[] args) {
+        Shape circle = new Circle(5.0, "red", true);
+        System.out.println("\n" + "Area of Circle: " + circle.getArea());
+        System.out.println("Perimeter of Circle: " +circle.getPerimeter());
+        System.out.println(circle.toString() + "\n");
 
-    Dog aso = new Dog();
-    aso.name = "Ed";
-    aso.papi = 5;
-
-    aso.dogie[0] = "ja";
-    aso.dogie[1] = "je";
-    aso.dogie[2] = "ji";
-    aso.dogie[3] = "jo";
-    aso.dogie[4] = "ju";
-
-    System.out.println(aso.showName());
-    System.out.println("woof! woof!");
-    System.out.println("Number of Puppies: " + aso.numOfPapi());
-    System.out.println("List of Puppies");
-
-    for(int i = 0; i < 5; i++){
-        System.out.println(aso.dogie[i]);
+        Shape Rectangle = new Rectangle(10.5, 5.5, "blue", true);
+        System.out.println("Area of Rectangle: " + Rectangle.getArea());
+        System.out.println("Perimeter of Rectangle: " + Rectangle.getPerimeter());
+        System.out.println(Rectangle.toString() + "\n");
+        
+        Shape Square = new Square(4.0, 5.0, 5.0, "mayumlue", true);
+        System.out.println("Area of Square: " + Square.getArea());
+        System.out.println("Perimeter of Square: " + Square.getPerimeter());
+        System.out.println(Square.toString());
     }
-
-}
 }
